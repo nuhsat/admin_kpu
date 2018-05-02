@@ -3,10 +3,10 @@
 
    $id = $_GET['id'];
 
-    $q = mysqli_query($connect, "DELETE FROM post WHERE id='$id'");
+    $q = mysqli_query($connect, "DELETE FROM video WHERE id='$id'");
 
     $data =array(
-        'message' => "Delete POST Succses",
+        'message' => "Delete Video Succses",
         'status' => "200"
     );
     echo json_encode($data);

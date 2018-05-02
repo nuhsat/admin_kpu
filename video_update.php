@@ -15,7 +15,7 @@
        $kategori = $request->kategori;
        $url = $request->url;
 
-        $q = mysqli_query($connect, "UPDATE post SET judul='$judul', konten='$konten', kategori='$kategori', url='$url' WHERE id='$id'");
+        $q = mysqli_query($connect, "UPDATE video SET judul='$judul', konten='$konten', kategori='$kategori', url='$url' WHERE id='$id'");
 
         if($q){
             $data =array(

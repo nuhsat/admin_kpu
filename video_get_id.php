@@ -3,7 +3,7 @@
 
     $id = $_GET['id'];
 
-    $q = mysqli_query($connect, "SELECT * FROM post WHERE id='$id'");
+    $q = mysqli_query($connect, "SELECT * FROM video WHERE id='$id'");
 
     while($result =mysqli_fetch_assoc($q)){
             $result_set[]=$result;

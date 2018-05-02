@@ -1,15 +1,13 @@
 <?php
     include 'db_connect.php';
 
-    $id = $_GET['id'];
-
-    $q = mysqli_query($connect, "SELECT * FROM post WHERE id='$id'");
+    $q = mysqli_query($connect, "SELECT * FROM video");
 
     while($result =mysqli_fetch_assoc($q)){
             $result_set[]=$result;
         }
     $data =array(
-        'message' => "Get Data POST berdasarkan ID Succses",
+        'message' => "Get Data video Succses",
         'data' => $result_set,
         'status' => "200"
     );

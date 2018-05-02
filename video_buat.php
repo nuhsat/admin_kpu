@@ -16,7 +16,7 @@
         $kategori = $request->kategori;
         $url = $request->url;
 
-        $query = mysqli_quey($connect,"INSERT INTO post (judul, konten, kategori, url) VALUES ('$judul', '$konten', '$kategori', '$url') ");
+        $query = mysqli_quey($connect,"INSERT INTO video (judul, konten, kategori, url) VALUES ('$judul', '$konten', '$kategori', '$url') ");
 
            if($query){
         
