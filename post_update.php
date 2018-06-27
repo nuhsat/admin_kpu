@@ -14,8 +14,9 @@
        $konten = $request->konten;
        $kategori = $request->kategori;
        $url = $request->url;
+       $sumber = $request->sumber;
 
-        $q = mysqli_query($connect, "UPDATE post SET judul='$judul', konten='$konten', kategori='$kategori', url='$url' WHERE id='$id'");
+        $q = mysqli_query($connect, "UPDATE post SET judul='$judul', konten='$konten', kategori='$kategori', url='$url', sumber='$sumber' WHERE id='$id'");
 
         if($q){
             $data =array(

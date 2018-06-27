@@ -24,10 +24,15 @@
     }
 
 //    $localhost = "107.6.175.205";
+    // $localhost = "localhost";
+    // $username = "root";
+    // $password = "";
+    // $db_name = "kpu";
+
     $localhost = "localhost";
-    $username = "root";
-    $password = "";
-    $db_name = "kpu";
+    $username = "mauldevt";
+    $password = "k15kdS3Eh6";
+    $db_name = "mauldevt_suarakami";
 
     //create connection
     $connect = mysqli_connect($localhost, $username, $password, $db_name);

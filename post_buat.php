@@ -15,8 +15,9 @@
         $konten   = $request->konten;
         $kategori = $request->kategori;
         $url = $request->url;
+        $sumber = $request->sumber;
 
-        $query = mysqli_quey($connect,"INSERT INTO post (judul, konten, kategori, url) VALUES ('$judul', '$konten', '$kategori', '$url') ");
+        $query = mysqli_quey($connect,"INSERT INTO post (judul, konten, kategori, url, sumber) VALUES ('$judul', '$konten', '$kategori', '$url', '$sumber') ");
 
            if($query){
         

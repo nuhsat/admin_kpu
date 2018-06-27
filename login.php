@@ -12,7 +12,7 @@
 //encrypt
  $encrypt_password = md5($password);
 
-$query_login = mysqli_query($connect, "SELECT id_user,nama_user,email_user FROM user WHERE email_user='$email' AND password_user ='$encrypt_password' ");
+$query_login = mysqli_query($connect, "SELECT id,nama,email FROM admin WHERE email='$email' AND password ='$encrypt_password' ");
     if(mysqli_num_rows($query_login)){
         
         $row=mysqli_fetch_assoc($query_login);
